@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    /**
+     * if khuyết
+     */
+    // let weather = prompt("Thời tiết sáng nay thế nào bạn: ");
+    // if (weather === "mua" || weather === "mưa"){
+    //     document.write("Trời mưa thì nên mang theo áo mưa các bạn nam nhé!!")
+    // }
+
+    /**
+     * if-else đầy đủ
+     */
+    // let weather = prompt("Thời tiết sáng nay thế nào bạn: ");
+    // if (weather === "mua" || weather === "mưa"){
+    //     document.write("Trời mưa thì nên mang theo áo mưa các bạn nam nhé!!")
+    // }else {
+    //     document.write("Hôm nay thời tiết bình thường, không mưa, nhớ mang theo tiền đổ xăng")
+    // }
+
+    /**
+     * if-else lồng nhau
+     * ví dụ về bài toán giải phương trình bậc nhất ax + b = 0
+     */
+
+    // let a = parseInt(prompt("Nhập vào giá a của phương trình ax + b = 0"));
+    // let b = parseInt(prompt("Nhập vào giá b của phương trình ax + b = 0"));
+    // if (a === 0 ){
+    //     if (b === 0){
+    //         document.write("Phương trình có vô số nghiệm!")
+    //     }else {
+    //         document.write("Phương trình vô nghiệm")
+    //     }
+    // }else {
+    //     document.write("Phương trình có nghiệm là: " + -b/a)
+    // }
+
+    /**
+     * if-else bậc thang
+     * xây dựng chương trình xếp loại A, B, C, D cho các bạn học viên
+     * Quy định :
+     * >= 90 thì xếp loại A
+     * >= 80 thì xếp loại B
+     * >= 70 thì xếp loại C
+     * còn lại thì xếp loại D
+     */
+
+    // let mark = prompt("Nhập vào điểm tổng kết của học viên: ");
+    // if (mark >= 90){
+    //     document.write("Học viên này được xếp loại A");
+    // }else if (mark >= 80){
+    //     document.write("Học viên này được xếp loại B");
+    // }else if (mark >= 70){
+    //     document.write("Học viên này được xếp loại C");
+    // }else {
+    //     document.write("Học viên này được xếp loại D");
+    // }
+    /**
+     * Chỉ bắt buộc chuyển sang kiểu số khi có so sánh ===, !==, hoặc sử dụng toán tử +
+     */
+
+    // let number1 = parseInt(prompt("Nhập số thứ 1: "));
+    // let number2 = parseInt(prompt("Nhập số thứ 2: "));
+    // let sum = number1 + number2
+    // document.write("Tổng của 2 số là: " + sum);
+
+
+    /**
+     * Viết chương trình cho người dùng nhập vào 1 số và hiển thị chữ tiếng việt của nó
+     */
+    let number = parseInt(prompt("Nhập vào 1 số: "));
+    switch (number) {
+        case 0:
+            document.write("Bạn đã nhập số zero");
+            break;
+        case 1:
+            document.write("Bạn đã nhập số một");
+            break;
+        case 2:
+            document.write("Bạn đã nhập số hai");
+            break;
+        case 3:
+            document.write("Bạn đã nhập số ba");
+            break;
+        case 4:
+            document.write("Bạn đã nhập số bốn");
+            break;
+        case 5:
+            document.write("Bạn đã nhập số năm");
+            break;
+        case 6:
+            document.write("Bạn đã nhập số sáu");
+            break;
+        case 7:
+            document.write("Bạn đã nhập số bảy");
+            break;
+        case 8:
+            document.write("Bạn đã nhập số tám");
+            break;
+        case 9:
+            document.write("Bạn đã nhập số chín");
+            break;
+        default:
+            document.write('Chương trình chỉ đọc được từ 1 đến 9');
+    }
+</script>
+</body>
+</html>
