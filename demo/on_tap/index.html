@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    // let arr1 = [];
+    // let arr2 = new Array(3,4,5,6,8,22,5,55);
+    // let arr3 = Array(10);
+    // for (let i = 0; i < arr1.length; i++){
+    //   document.writeln(arr1[i].toString());
+    // }
+    //
+    // let arr5 = new Array(5);
+    // for (let i = 0; i < arr5.length; i++) {
+    //     arr5[i] = new Array(10);
+    // }
+    // let arr6 = [
+    //     [, , , , , , , , ,],
+    //     [, , , , , ,],
+    //     [, , , , , , , , ,],
+    //     [, , , , 10, , , , ,],
+    //     [, , , , , , , , ,],
+    // ]
+    // document.writeln(arr6[3][4]);
+
+
+    // let hang = parseInt(prompt("Nhập số hàng của hình chữ nhật: "));
+    // let cot = parseInt(prompt("Nhập số cột của hình chữ nhật: "));
+    //
+    // for (let i = 0; i < hang; i++){
+    //     for (let j = 0; j < cot; j++){
+    //         if (i === 0 || i === hang - 1 || j === 0 || j === cot -1 || i === j){
+    //             document.writeln("*")
+    //         }else {
+    //             document.writeln("&nbsp&nbsp")
+    //         }
+    //     }
+    //     document.writeln("<br>")
+    // }
+
+    // let arr7 = [
+    //     [1,2,3,4,5,6,7],
+    //     [10,20,30,40,50,60,70],
+    //     [12,22,32,42,52,62,72],
+    //     [11,21,31,41,51,61,71],
+    //     [11,12,13,14,15,16,17],
+    //     [31,32,33,34,35,36,37],
+    // ]
+    // for (let i = 0; i < arr7.length; i ++){
+    //     for (let j = 0; j < arr7[i].length; j++){
+    //         document.writeln(arr7[i][j].toString());
+    //     }
+    //     document.writeln("<br>")
+    // }
+
+    // let str = "Hello CodeGym Đà Nẵng";
+    // let arrStr = str.split(" "); //let arrStr = ["Hello", "CodeGym", "Đà", "Nẵng"]
+    // let arrResult = [];
+    // for (let i = 0; i < arrStr.length; i++){
+    //     let temp = arrStr[i].split("");
+    //     alert(temp);
+    //     arrResult = arrResult.concat(temp);
+    // }
+    // alert(arrResult.join("-"))
+
+    let hang = parseInt(prompt("Nhập số lượng phần tử của mảng cha: "));
+    let cot = parseInt(prompt("Nhập số lượng phần tử của mảng con: "));
+    let arr = Array(hang);
+    for (let i = 0; i < arr.length; i++){
+        arr[i] = Array(cot);
+    }
+
+    for (let i = 0; i < arr.length; i++){
+        for(let j = 0; j < arr[i].length; j++){
+            arr[i][j] = prompt("Nhập giá trị cho phần tử hàng: " + (i+1) + "cột: " + (j+1));
+        }
+    }
+
+    for (let i = 0; i < arr.length; i ++){
+        for (let j = 0; j < arr[i].length; j++){
+            document.writeln(arr[i][j].toString());
+        }
+        document.writeln("<br>")
+    }
+</script>
+</body>
+</html>
