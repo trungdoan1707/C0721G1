@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    /**
+     * Khai báo mảng cách 1: sử dụng dấu []
+     */
+    // let students = ["Phước", "Tân", "Hùng", "Huy",  "Thiện", "Nhật", "Sang"];
+
+    /**
+     * Khai báo mảng cách 2: Sử dụng new Array()
+     */
+    // let students = new Array("Phước", "Tân", "Hùng", "Huy",  "Thiện", "Nhật", "Sang");
+
+    /**
+     * Khai báo mảng cách 3: sử dụng Array()
+     */
+    let students = Array("Phước", "Tân", "Hùng", "Huy", "Thiện", "Nhật", "Sang");
+
+
+    /**
+     * Khai báo mảng 1 chiều với 1 phần tử là số n thì phải dùng [ ], nếu dùng Array hoặc new Array thì JS sẽ hiểu là khai báo mảng có n phần tử
+     */
+
+    let numbers = Array(5);
+    console.log(numbers);
+
+
+    /**
+     * duyệt mảng bằng vòng lặp for truyền thống
+     */
+    document.writeln("<br>");
+    document.writeln("Sử dụng for");
+    document.writeln("<br>")
+    for (let i = 0; i < students.length; i++) {
+        document.writeln(students[i]);
+    }
+
+    /**
+     * Duyệt mảng sử dụng vòng lặp while
+     */
+    document.writeln("<br>");
+    document.writeln("Sử dụng while");
+    document.writeln("<br>")
+    let i = 0;
+    while (i < students.length) {
+        document.writeln(students[i]);
+        i++;
+    }
+
+    /**
+     * Sử dụng for - in để duyệt mảng
+     * mỗi 1 lần duyệt sẽ nhận được index của phần tử
+     */
+    document.writeln("<br>");
+    document.writeln("Sử dụng for-in");
+    document.writeln("<br>")
+    for (let index in students) {
+        document.writeln(students[index]);
+    }
+
+    /**
+     * Sử dụng for - of để duyệt mảng
+     * Mỗi lần duyệt sẽ nhận được chính bản thân phần tử
+     */
+    document.writeln("<br>");
+    document.writeln("Sử dụng for-of");
+    document.writeln("<br>")
+    for (let student of students) {
+        document.writeln(student);
+    }
+
+    /**
+     * sử dụng foreach()
+     */
+    document.writeln("<br>");
+    document.writeln("Sử dụng foreach()");
+    document.writeln("<br>")
+    students.forEach((student) => {
+        document.writeln(student);
+    })
+
+</script>
+</body>
+</html>

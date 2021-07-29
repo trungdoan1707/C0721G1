@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let numbers = [5,2,4,6,7,8,2,1,33,3,44];
+    /**
+     * Function join()
+     */
+    // alert(numbers.join("-----"));
+
+    /**
+     * Function push(): thêm phần tử vào cuối mảng
+     */
+    // numbers.push(55);
+    // alert(numbers.join("---"))
+
+    /**
+     * Function pop(): xóa phần tử vào cuối mảng
+     */
+    // numbers.pop();
+    // alert(numbers.join("---"))
+
+    /**
+     * Thêm phần tử vào đầu mảng
+     */
+    // numbers.unshift(20);
+    // alert(numbers.join("---"))
+
+    /**
+     * Xóa phần tử ở đầu mảng
+     */
+    // numbers.shift();
+    // alert(numbers.join("---"))
+
+    /**
+     * Sắp xếp các phần tử trong mảng, mặc định sẽ sắp xếp theo ký tự alphabet
+     */
+    numbers.sort();
+    alert(numbers);
+
+    //sắp xếp tử nhỏ đến lớn
+    numbers.sort(function (a,b) {
+        return  a - b;
+    })
+    alert(numbers);
+
+    //sắp xếp tử lớn đến nhỏ (ví dụ thêm về cách viết arrow function)
+    numbers.sort((a,b) => {
+        return  b - a;
+    })
+    alert(numbers);
+
+</script>
+</body>
+</html>
