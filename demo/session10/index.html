@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  /**
+   * Khai báo class Student, có các thuộc tính tên, tuổi, địa chỉ..
+   */
+
+  class Student {
+    constructor(name, age, address) {
+      this._name = name;
+      this.age = age;
+      this.address = address;
+    }
+    goToSchool(){
+      alert("Sinh viên đi học bằng xe đạp")
+    }
+    diemDanh(){
+      alert("Sinh viên tham gia điểm danh")
+    }
+  }
+
+  student1 = new Student("Nguyễn Văn A", 23, "Đà Nẵng");
+  student2 = new Student("Nguyễn Văn B", 23, "Đà Nẵng");
+  student1.goToSchool();
+  student1.diemDanh();
+  alert("Tên của sinh viên là: "  + student1._name);
+  alert("Tuổi của sinh viên là: "  + student1.age);
+  alert("Địa chỉ của sinh viên là: "  + student1.address);
+
+  /**
+   * Khởi tạo đối tượng không cần khai báo class
+   */
+
+  let teacher = {
+    name: 'Nguyễn Văn D',
+    age: 40,
+    address: 'Đà Nẵng'
+  }
+</script>
+
+</body>
+</html>
