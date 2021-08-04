@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    class Person {
+        constructor(id, name, age, address, phone) {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+            this.address = address;
+            this.phone = phone;
+        }
+
+        eat() {
+            alert("Con người thì ăn cơm bằng muỗng và đũa chứ không ăn bốc?");
+        }
+    }
+
+    //Sử dụng từ khóa extends để triển khai kế thừa
+    class Student extends Person{
+        constructor(id, name, age, address, phone, mark) {
+            super(id, name, age, address, phone); //sử dụng super() để gọi constructor của class cha
+            this._mark = mark; //khai báo thuộc tính có dấu _ phía trước để thể hiện tính bao đóng
+        }
+        setMark(mark){
+            this._mark = mark;
+        }
+        getMark(){
+            return this._mark;
+        }
+        eat(){
+            alert("Sinh viên thì ăn cơm với thịt ba chỉ");
+        }
+    }
+
+    class Teacher extends Person{
+        constructor(id, name, age, address, phone, salary) {
+            super(id, name, age, address, phone);
+            this.salary = salary;
+        }
+        eat() {
+            alert("Ăn cơm với thịt bò")
+        }
+    }
+
+    let student1 = new Student(1, "Nguyễn Văn Quyết", 30, "Hà Nội", "0934338899", 5);
+    // alert(student1.id);
+    // alert(student1.name);
+    // alert(student1.address);
+    // alert(student1);
+    student1.setMark(7);
+    alert(student1.getMark())
+    student1.eat();
+</script>
+</body>
+</html>
